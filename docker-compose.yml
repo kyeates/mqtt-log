@@ -9,3 +9,5 @@ services:
     environment:
       - MQTT_PORT=1883
       - LOG_PATH=logs/mqtt.log
+    ports:
+      -1883:1883
