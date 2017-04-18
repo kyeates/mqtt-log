@@ -1,5 +1,6 @@
 var aedes = require('aedes')(),
     mqtt_port = process.env.MQTT_PORT || 1883,
+    logPath = process.env.LOG_PATH || 'mqtt.log',
     winston = require('winston');
 
 var logger = new winston.Logger({

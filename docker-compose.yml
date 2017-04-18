@@ -1,0 +1,10 @@
+version: '2'
+services:
+  mqtt-to-json:
+    build: .
+    container_name: mqtt-to-json
+    volumes:
+      - logs:/app/logs
+    environment:
+      - MQTT_PORT=1883
+      - LOG_PATH=logs/mqtt.log
