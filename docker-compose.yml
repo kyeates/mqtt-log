@@ -3,6 +3,7 @@ services:
   mqtt-to-json:
     build: .
     container_name: mqtt-to-json
+    restart: always
     volumes:
       - ./logs:/app/logs
     environment:
